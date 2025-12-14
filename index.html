@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Books NG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans" id="home">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                
+                <a href="#home" class="flex items-center space-x-2">
+                    <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                    <span class="text-xl font-bold text-gray-800">Edu Books NG</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About Us</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-blue-600 font-medium transition">Pricing</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition">Contact</a>
+                    <button onclick="sendWhatsapp('Hello, I have a general inquiry from your website.')" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-sm font-semibold transition">
+                        Chat on WhatsApp
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-100">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">About Us</a>
+                <a href="#pricing" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Pricing</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600 font-medium">Contact</a>
+                <button onclick="sendWhatsapp('Hello, I have a general inquiry.')" class="mt-2 w-full bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-semibold">
+                    Chat on WhatsApp
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-20"></div>
+
+    <header class="container mx-auto px-6 py-10 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+            Buy Educational Books Online
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Order textbooks, exam guides, and novels easily via WhatsApp. Fast, reliable, and affordable education at your fingertips.
+        </p>
+        
+        <div class="w-full max-w-6xl mx-auto h-64 md:h-96 lg:h-[500px] mb-10 overflow-hidden rounded-2xl shadow-2xl">
+            <img src="text.jpg" alt="Welcome Image" class="w-full h-full object-cover">
+        </div>
+
+        <button onclick="document.getElementById('pricing').scrollIntoView()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:scale-105">
+            View Offers
+        </button>
+    </header>
+
+    <section id="about" class="bg-blue-50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">About Edu Books NG</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    We are dedicated to making knowledge accessible to every Nigerian student. 
+                    Whether you are preparing for WAEC, JAMB, or simply looking for a good novel to relax with, 
+                    Edu Books NG connects you directly with the books you need.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Pricing & Collections</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+            
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col h-full border border-gray-100">
+                <div class="h-48 bg-blue-50 flex items-center justify-center">
+                    <svg class="w-20 h-20 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 10h.01M12 14H8"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Request a Book</h3>
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">DM us and tell us the kind of books you want. We are available.</p>
+                    
+                    <button onclick="sendWhatsapp('Hello, I am looking for a specific book. Can you help me find it?')" class="w-full bg-blue-100 text-blue-700 py-2 rounded-lg font-semibold hover:bg-blue-200 transition">
+                        Message Us
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col h-full border border-gray-100">
+                <div class="h-48 bg-green-50 flex items-center justify-center">
+                    <svg class="w-20 h-20 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Exam Past Questions</h3>
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">Comprehensive past questions for all major exams.</p>
+                    <div class="mb-4 text-lg font-bold text-green-600">₦1,000</div>
+                    
+                    <button onclick="sendWhatsapp('Hello, I want to purchase Exam Past Questions for 1000 Naira.')" class="w-full bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600 transition">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition overflow-hidden flex flex-col h-full border border-gray-100">
+                <div class="h-48 bg-pink-50 flex items-center justify-center">
+                    <svg class="w-20 h-20 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="text-xl font-bold mb-2">Novels Collection</h3>
+                    <p class="text-gray-600 mb-4 text-sm flex-grow">All kinds of novels are available. Romance, Thriller, Sci-fi.</p>
+                    <div class="mb-4 text-lg font-bold text-green-600">₦1,500</div>
+                    
+                    <button onclick="sendWhatsapp('Hello, I want to buy a Novel for 1500 Naira.')" class="w-full bg-green-500 text-white py-2 rounded-lg font-semibold hover:bg-green-600 transition">
+                        Order Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative bg-white rounded-xl shadow-2xl border-2 border-yellow-400 transform md:-translate-y-4 md:scale-105 flex flex-col h-full overflow-hidden z-10">
+                <div class="absolute top-0 right-0 bg-yellow-400 text-xs font-bold px-3 py-1 rounded-bl-lg text-white uppercase tracking-wider">
+                    Best Value
+                </div>
+                <div class="h-48 bg-gradient-to-br from-purple-600 to-indigo-700 flex items-center justify-center">
+                    <svg class="w-24 h-24 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                    </svg>
+                </div>
+                <div class="p-6 flex flex-col flex-grow bg-white">
+                    <h3 class="text-2xl font-bold mb-2 text-purple-900">Student Essentials</h3>
+                    <p class="text-gray-600 mb-6 text-sm flex-grow">Complete subscription includes textbooks, exam guidance, and PDF resources.</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-3xl font-extrabold text-gray-900">₦2,000</span>
+                        <span class="text-gray-500 ml-1">/month</span>
+                    </div>
+
+                    <button onclick="sendWhatsapp('Hello, I want to subscribe to the Student Essentials plan for 2000 Naira/month.')" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold py-3 rounded-xl shadow-lg transition transform hover:scale-105">
+                        Subscribe Now
+                    </button>
+                    
+                    <div class="mt-4 text-center">
+                        <span class="text-xs text-green-600 font-semibold flex items-center justify-center">
+                            <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            Instant Access
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-100 py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-600 mb-8">Ready to order? Click the button below.</p>
+            <button onclick="sendWhatsapp('Hello, I have a general enquiry.')" class="bg-green-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-green-700 transition shadow-lg">
+                Message +234 807 904 1786
+            </button>
+        </div>
+    </footer class="bg-gray-800 text-white py-8 text-center">
+        <p>&copy; 2024 Edu Books NG. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendWhatsapp(message) {
+            const phoneNumber = "2348079041786";
+            
+            // This line prepares the text so it works in a web link
+            const encodedMessage = encodeURIComponent(message);
+            
+            // This opens WhatsApp with your number and the message ready to go
+            const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            window.open(url, '_blank');
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
